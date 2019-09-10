@@ -1,0 +1,365 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.forms {
+    height: 100vh;
+    width: 100%;
+    background: url(./img/test-desk.jpg) no-repeat;
+    background-position-x: -50px; 
+    display: flex;
+    box-sizing: border-box;
+}
+/*********************************************************/
+.footer-start {
+    width: 75%;
+    height: 100vh;
+    display: flex;
+    align-items: flex-end;
+    box-sizing: border-box;
+    position: relative;
+}
+.footer {
+    width:100%; 
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background: rgba(255, 255, 255, 0.692);
+    padding: 20px 110px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 10px;
+}
+.footer span {
+    margin: 0 5px;
+}
+.footer-step_two {
+    width: 60%;
+}
+/*********************************************************/
+.enter-start {
+    width: 25%;
+    height: 100vh;
+    box-sizing: border-box;
+    background: #fc5095;
+}
+.enter-step_two {
+    width: 40%;
+    background: #fc8950;
+}
+.enter-step_four {
+    width: 40%;
+    background: #1da7c0;
+}
+/**********************************************************/
+.enter-content-one,
+.enter-content-two,
+.enter-content-four {
+    height: calc(100vh - 150px);
+    margin-top: 150px;
+    margin-left: 15px;
+    background: #fff;
+    padding: 75px 60px;
+    box-sizing: border-box;
+}
+.enter-content-two,
+.enter-content-four {
+    display: none;
+    padding: 75px 150px 75px 60px;
+    background: #f6f5f5;
+}
+/***********************************************************/
+.h3-start {
+    color: #fc5095;
+    text-transform: uppercase;
+    font-size: 22px;
+}
+.h3-step_two {
+    color: #fc8950;
+    margin-bottom: 25px;
+}
+.h3-step_four{
+    color: #1da7c0;
+}
+
+/**********************************************************/
+
+.enter-content-one p {
+    text-transform: uppercase;
+    margin: 15px 0 100px;
+}
+
+.enter-content-one h2 {
+    text-transform: uppercase;
+}
+
+/*********************************************************/
+.btn-next-start {
+    color: #fff;
+    background: #fc5095;
+    border: none;
+    border-radius: 15px;
+    padding: 10px 25px;
+    font-size: 26px;
+    font-weight: 600;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+.btn-next-start:focus,
+.btn-next-step_two:focus,
+.btn-step_two:focus {
+    outline: none;
+}
+
+.btn-s {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.btn-step_two {
+    background: #fff;
+    padding: 15px 75px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #d3d3d3;
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.btn-step_two-active {
+    background: #fc8950;
+    color: #fff;    
+}
+
+.btn-step_two:hover,
+.btn-next-step_two {
+    background: #fc8950;
+    color: #fff;
+}
+
+.btn-next-step_two {
+    display: none;
+    border: 1px solid #d3d3d3;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-weight: 600;
+    font-size: 16px;
+    margin: 50px 0 0 20px;
+    cursor: pointer;
+}
+/********************************************************/
+.variant1,
+.variant2,
+.variant3 {
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    background: rgba(252, 137, 80, 0.521);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+.variant1 h2,
+.variant2 h2,
+.variant3 h2 {
+    color: #fff;
+    font-weight: 800;
+    font-size: 32px;
+    text-transform: uppercase;
+}
+.variant1 h2 span,
+.variant2 h2 span,
+.variant3 h2 span {
+    font-size: 300px;
+    line-height: 200px;
+}
+/********************************************************/
+.form-reg {
+    padding-right: 100px;
+    margin-top: 10px;
+}
+
+.form-reg p {
+    font-weight: 600;
+    font-size: 12px;
+}
+
+.sex {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+.sex input {
+    display: none;
+}
+.sex label {
+    cursor: pointer;
+    background: #fff;
+    border: 1px solid #d3d3d3;
+    border-radius: 5px;
+    font-weight: 600;
+    padding: 10px 20px;
+    box-sizing: border-box;
+}
+.sex .sex-active {
+    color: #fff;
+    background: #1da7c0;
+}
+
+.input-text {
+    width: 100%;
+    border: 1px solid #d3d3d3;
+    border-radius: 5px;
+    padding: 15px 10px;
+    margin-bottom: 5px;
+    box-sizing: border-box;
+}
+.input-text:focus {
+    outline: none;
+    border: 1px solid #1da7c0;
+}
+
+.age-18 {
+    display: flex;
+    align-items: center;
+    font-size: 9px;
+    margin-top: 5px;
+}
+.age-18 label {
+    margin-left: 5px;
+}
+.finish {
+    color: #aaa9a9;
+    background: #fff;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 16px;
+    padding: 10px 25px;
+    border: 1px solid #1da7c0;
+    border-radius: 10px;
+    margin-top: 10px;    
+}
+.finish-active {
+    background: #1da7c0;
+    color: #fff;
+    cursor: pointer;
+}
+
+/*********************************************************/
+
+@media screen and (max-width: 1400px) {
+    .enter-content-four {
+        padding: 75px 60px;
+    }
+}
+
+@media screen and (max-width: 1315px) {
+    .forms {
+        background-position-x: -100px; 
+    }
+    .footer-start {
+        width: 70%;
+    }.enter-start {
+        width: 30%;
+    }
+    .footer-step_two {
+        width: 60%;
+    }
+    .enter-step_two {
+        width: 40%;
+    }
+    .enter-content-two {
+        padding: 75px 60px;
+    }
+    .form-reg {
+        padding-right: 50px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .form-reg {
+        padding-right: 10px;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .forms {
+        background-position-x: -50px; 
+        background-size: cover;
+    }
+    .footer-start {
+        width: 65%;
+    }.enter-start {
+        width: 35%;
+    }
+    .footer-step_two {
+        width: 50%;
+    }
+    .enter-step_two {
+        width: 50%;
+    }
+    .variant1 h2, .variant2 h2, .variant3 h2 {
+        width: 80%;
+    }
+    .variant1 h2 span, .variant2 h2 span, .variant3 h2 span {
+        font-size: 175px;
+        line-height: 150px;
+    }
+    .form-reg {
+        padding-right: 50px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .form-reg {
+        padding-right: 0px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .forms {
+        background-position-x: -150px; 
+        background-size: cover;
+    }
+    .footer-start {
+        width: 55%;
+    }.enter-start {
+        width: 45%;
+    }
+    .footer-step_two {
+        width: 50%;
+    }
+    .enter-step_two {
+        width: 50%;
+    }
+    .variant1 h2 span, .variant2 h2 span, .variant3 h2 span {
+        font-size: 150px;
+        line-height: 100px;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .footer-step_two {
+        width: 45%;
+    }
+    .enter-step_two {
+        width: 55%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .footer-step_two {
+        width: 40%;
+    }
+    .enter-step_two {
+        width: 60%;
+    }
+}
